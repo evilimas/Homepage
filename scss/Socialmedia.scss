@@ -1,0 +1,47 @@
+.social {
+    display: flex;
+    padding: 20px;
+  
+  
+    .textas{
+      flex-direction: column;
+      gap: 5px;
+      margin-left: 30px;
+  
+      p{
+        width: 80%;
+        font-size: 0.8em;
+        opacity: 0.7;
+        line-height: 15px;
+        
+      }
+      
+      div.icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+      }
+    }
+  
+    div{
+      display: flex;
+      width: 50%;
+      justify-content: space-around;
+      
+      a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.7;
+        
+        &:hover{
+          opacity: 1;
+          transform: scale(1.2);
+        }
+        
+  
+      }
+    }
+   
+  }

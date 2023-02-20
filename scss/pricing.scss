@@ -1,0 +1,103 @@
+#pricing{
+    background: $blue;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    padding: 0 150px;
+      .swiper-slide {
+        align-self: flex-end;
+      }
+      .pricing-headeris {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 100px;
+        h2 {
+          color: $white;
+          font-size: 30px;
+          font-weight: 500;
+        }
+        .greendiv {
+          width: 65px;
+          border: 1px solid $green;
+          margin: 25px 0;
+        }
+        p{
+          color: $white;
+          font-size: 0.8rem;
+        }
+    
+    }
+    .kaina{
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .plan {
+      max-width: 320px;
+      min-width: 230px;
+      margin: 70px auto 100px;
+      border-radius: 5px;
+      overflow: hidden;
+      transition: 0.3s;
+      gap: 10px;
+      &:hover{
+        transform: scale(1.2);
+      }
+  
+      
+      .plan-header {
+        background: $darkGrey;
+        color: $white;
+        padding: 15px 0 20px 0;
+        h3 {
+          font-size: 20px;
+          text-align: center;
+          font-weight: normal;
+        }
+        .price {
+          font-size: 90px;
+          margin: 15px 0;
+          font-weight: normal;
+          text-align: center;
+          span {
+            font-size: 36px;
+            margin-right: 5px;
+          }
+        }
+        p {
+          color: $white;
+          opacity: 0.5;
+          font-size: 15px;
+          text-align: center;
+        }
+      }
+  
+      .plan-green-line {
+        background: $green;
+        border: 5px solid $green;
+        color: $white;
+        line-height: 30px;
+        text-align: center;
+      }
+      ul {
+        text-align: center;
+        
+        li {
+          background: $white;
+          color: $grey;
+          font-size: 13px;
+          padding: 10px 30px;
+        
+          
+        }
+      }
+    }
+  }
+  
+  
+  
+  
+  
+  

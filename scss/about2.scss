@@ -1,0 +1,70 @@
+#about{
+    flex-direction: row;
+    margin-top: 100px;
+    
+  
+    p{
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.8rem;
+      opacity: 0.6;
+  
+    }
+    
+    h2{
+      text-align: center;
+    }
+    hr{
+      height: 2px;
+      background-color: $orange;
+      border: none;
+      margin-left: 550px;
+      margin-top: 20px;
+      align-items: center;
+      justify-content: center;
+      width:5%;
+    }
+  
+    .display {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: 65px;
+      gap: 100px;
+      margin-bottom: 100px;
+      & > div {
+        align-self: flex-start;
+      }
+  
+      h3 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        margin: 35px 0;
+      }
+      p {
+        max-width: 290px;
+        width: 90%;
+        font-size: 0.8rem;
+        margin-left: 15px;
+        
+      }
+      i {
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        border: 1px solid $orange;
+        padding: 11px 0;
+        font-size: 20px;
+        border-radius: 100%;
+        
+      }
+  
+      .fa-award, .fa-seedling, .fa-cc-visa{
+        color: $orange;
+      }
+      
+    }
+  }
+  
