@@ -14,19 +14,20 @@
   <!-- Navigacijos meniu -->
   <header>
     <div>
-      <img src="./app/images/cheshire-county-hygiene-services.svg" alt="logo">
+      <a href="#home"><img src="./app/images/cheshire-county-hygiene-services.svg" alt="logo"></a>
+      
     </div>
     <div class="menu">
       <a href="#tabs">Features</a>
       <a href="#antras">About</a>
       <a href="#pricing">Pricing</a>
       <a href="#reviews">Reviews</a>
-      <a href="">Contact</a>
+      <a href="#contact">Contact</a>
     </div>
   </header>
   <!-- Sekcija-1---Home -->
 
-  <article class="pirmas">
+  <article id="home" class="pirmas">
     <div class="pirmaskaire">
       <img src="./app/images/cheshire-county-hygiene-services-1.svg" alt="logo1">
       <h2>Explainded propriety of out perpetual to you</h2>
@@ -36,13 +37,13 @@
     </div>
     <div>
       <form class="top">
-        <h3>Try Your FREE Trial Today</h3>
+        <h3>Try Your <span> FREE </span> Trial Today</h3>
         <p>Your details</p>
-        <input type="text" placeholder="First name">
+        <input class="box-textas" type="text" placeholder="First name">
         <hr>
-        <input type="text" placeholder="Last name">
+        <input class="box-textas" type="text" placeholder="Last name">
         <hr>
-        <input type="number" placeholder="Phone number">
+        <input class="box-textas" type="number" placeholder="Phone number">
         <hr>
         <p>Type of subscription</p>
         <div class="radio">
@@ -372,14 +373,51 @@
   </section>
 
   <!---8-Sekcija-----contact -->
-  
+
   <section id="contact">
     <h3>CONTACT US</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     <div class="input-box2">
+      <form id="contactForm" action="">
+        <input name="fullName" type="text" class="name" placeholder="First name" title="Write here your first name"/>
+        <input name="lastName" type="text" class="lastname" placeholder="Last name" title="Write here your last name"/>
+        <input name="phoneNumber" type="number" class="phone-number" placeholder="Phone number" title="Write here your phone number"/>
+
+        <div class="radio-btn">
+          <div class="contact-radio-btn">
+            <label for="personal">
+              <input id="personal" type="radio" value="personal" name="message" checked/>
+              <span class="mark">PERSONAL</span>
+            </label>
+          </div>
+          <div class="contact-radio-btn">
+            <label for="company">
+              <input id="company" type="radio" value="company" name="message"/>
+              <span class="mark">COMPANY</span>
+            </label>
+          </div>
+        </div>
+
+        <button name="contactBtn" class="btn" form="contactForm" type="submit">SEND</button>
+      </form>
 
     </div>
   </section>
+
+  <!---9-Sekcija-----Footeris -->
+  <footer>
+    <div class="ft-img">
+      <img src="./app/images/facebook-logo-1.svg" alt="">
+      <img src="./app/images/instagram-logo-1.svg" alt="">
+      <img src="./app/images/twitter-1.svg" alt="">
+      <img src="./app/images/pinterest-1.svg" alt="">
+      <img src="./app/images/wifi.png" alt="">
+    </div>
+    <div class="ft-text">
+      <p>© 2019 Cheshire County</p>
+    </div>
+  </footer>
+  
   
   
   
