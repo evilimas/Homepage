@@ -1,21 +1,41 @@
-header{
+nav{
     display: flex;
     background: black;
     justify-content: space-around;
     align-items: center;
     height: 60px;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+   
   
     img{
       width: 110px;
+      margin-right: 70px;
+      
+      
     }
     
     div.menu{
       display: flex;
-      gap: 30px;
+      gap: 40px;
+      
       
     }
+
+    #burger{
+      color: $white;
+      opacity: 0.7;
+      font-size: 1.2em;
+      display: none;
+      transition: 0.3s;
+      &:hover{
+        opacity: 1;
+      }
+    }
   
-    a{
+    .menu a{
       
       flex-direction: row;
       text-decoration: none;
@@ -24,10 +44,75 @@ header{
       color: rgb(255, 255, 255);
       opacity: 0.6;
       transition: 0.3s;
+      transition-delay: 0.1s;
+      position: relative;
   
       &:hover{
         opacity: 1;
       }
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -22px;
+        width: 100%;
+        height: 0%;
+        background: $orange;
+        z-index: -1;
+        transition: 0.3s;
+      }
+      &:hover::before {
+        height: 15%;
+      }
       
+    }
+
+    .selected {
+      color: rgba($color: $white, $alpha: 1);
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -22px;
+        width: 100%;
+        height: 0%;
+        background: $orange;
+        z-index: -1;
+        transition: 0.3s;
+        height: 15%;
+      }
+    }
+  }
+
+  @media (max-width: 768px){
+    #burger{
+      cursor: pointer;
+      display: block !important;
+      transition: 0.3s;
+     
+    }
+    #burger.rotate{
+      transform: rotate(-90deg);
+    }
+    nav img{
+      margin-right: 180px;
+    }
+
+
+    .menu{
+      position: absolute;
+      top: 50px;
+      left: 0;
+      background: black;
+      width: 100%;
+      height: 260px;
+      flex-direction: column;
+      align-items: center;
+      transform: translateY(-120%);
+      opacity: 0;
+      transition: 0,3s;
+      
+    }
+    .menu.open{
+      transform: translateY(0);
+      opacity: 1;
     }
   }

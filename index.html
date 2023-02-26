@@ -12,19 +12,17 @@
 </head>
 <body>
   <!-- Navigacijos meniu -->
-  <header>
-    <div>
+  <nav>
       <a href="#home"><img src="./app/images/cheshire-county-hygiene-services.svg" alt="logo"></a>
-      
-    </div>
     <div class="menu">
-      <a href="#tabs">Features</a>
+      <a class="selected" href="#tabs">Features</a>
       <a href="#antras">About</a>
       <a href="#pricing">Pricing</a>
       <a href="#reviews">Reviews</a>
       <a href="#contact">Contact</a>
     </div>
-  </header>
+    <i id="burger" class="fa-solid fa-bars"></i>
+  </nav>
   <!-- Sekcija-1---Home -->
 
   <article id="home" class="pirmas">
@@ -39,17 +37,17 @@
       <form class="top">
         <h3>Try Your <span> FREE </span> Trial Today</h3>
         <p>Your details</p>
-        <input class="box-textas" type="text" placeholder="First name">
+        <input class="box-textas" type="text" placeholder="First name" required>
         <hr>
-        <input class="box-textas" type="text" placeholder="Last name">
+        <input class="box-textas" type="text" placeholder="Last name" required>
         <hr>
-        <input class="box-textas" type="number" placeholder="Phone number">
+        <input class="box-textas" type="number" placeholder="Phone number" required>
         <hr>
         <p>Type of subscription</p>
         <div class="radio">
-        <input type="radio" value="Monthly">
+        <input type="radio" value="Monthly" id="Monthly" name="message" checked>
         <label for="">Monthly</label>
-        <input type="radio" value="Yearly">
+        <input type="radio" value="Yearly" id="Yearly" name="message">
         <label for="">Yearly</label>
         </div>
         <button>GET STARTED</button>
@@ -379,9 +377,9 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     <div class="input-box2">
       <form id="contactForm" action="">
-        <input name="fullName" type="text" class="name" placeholder="First name" title="Write here your first name"/>
-        <input name="lastName" type="text" class="lastname" placeholder="Last name" title="Write here your last name"/>
-        <input name="phoneNumber" type="number" class="phone-number" placeholder="Phone number" title="Write here your phone number"/>
+        <input name="fullName" type="text" class="name" placeholder="First name" title="Write here your first name" required/>
+        <input name="lastName" type="text" class="lastname" placeholder="Last name" title="Write here your last name" required/>
+        <input name="phoneNumber" type="number" class="phone-number" placeholder="Phone number" title="Write here your phone number" required/>
 
         <div class="radio-btn">
           <div class="contact-radio-btn">
@@ -423,5 +421,6 @@
   
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="swiper.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

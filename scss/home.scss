@@ -1,6 +1,6 @@
 article.pirmas{
     display: flex;
-    background: url(/app/images/photo-1480714378408-67cf0d13bc1.png);
+    background: url(/app/images/city.png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -34,7 +34,8 @@ article.pirmas{
       
   
       img:first-child{
-        width: 30%;
+        min-width: 200px;
+        max-width: 40%;
       }
   
    
@@ -59,6 +60,7 @@ article.pirmas{
         background: none;
         color: white;
         border-color: white;
+        transition: 0.5s;
         &:hover{
           transform: scale(1.2);
           color: $orange;
@@ -163,6 +165,13 @@ article.pirmas{
         width: 100%;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
+        cursor: pointer;
+        transition: 0.4s;
+        &:hover{
+          background: #289165;
+          font-size: 1em;
+
+        }
   
       }
       
