@@ -13,17 +13,25 @@
     
     h2{
       text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
     }
-    hr{
-      height: 2px;
-      background-color: $orange;
-      border: none;
-      margin-left: 550px;
-      margin-top: 20px;
-      align-items: center;
+    .headab2{
+      display: flex;
+      flex-direction: column;
       justify-content: center;
-      width:5%;
+      align-items: center;
+
     }
+    .greendiv {
+      width: 60px;
+      border: 1px solid $orange;
+      margin: 25px 0;
+      
+      
+      
+    }
+   
   
     .display {
       display: flex;

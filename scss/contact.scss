@@ -18,6 +18,9 @@
       padding-top: 60px;
       
     }
+    #contactForm{
+        width: 100%;
+    }
   
     .input-box2{
       display: flex;
@@ -48,10 +51,11 @@
           outline: none;
           border: none;
           border-bottom: 1px solid $lightGrey;
-         
           padding-bottom: 5px;
           margin-top: 30px;
+          margin-left: 20px;
           font-size: 15px;
+          width: 70%;
         }
   
         button{
@@ -59,9 +63,14 @@
           background: #41D395;
           color: white;
           border: none;
-          width: 60%;
+          width: 40%;
           border-radius: 5px;
           margin-bottom: 20px;
+          cursor: pointer;
+          transition: 0.4s;
+          &:hover{
+            @include button-before
+          }
           
     
         }
@@ -73,6 +82,7 @@
             gap: 80px;
             margin-top: 30px;
             margin-right: 70px;
+            cursor: pointer;
       
             .contact-radio-btn {
               display: flex;
@@ -90,6 +100,7 @@
                 font-weight: 600;
                 margin-left: 5px;
                 transition: color 0.5s;
+                margin-left: -13px;
       
                 input::before {
                   content: "";
