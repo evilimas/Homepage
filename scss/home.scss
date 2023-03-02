@@ -1,6 +1,6 @@
 article.pirmas{
     display: flex;
-    background: url(/app/images/city.png);
+    background: url(../images/city.png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -8,14 +8,9 @@ article.pirmas{
     height: 100%;
     
     &::before{
-      content: "";
-      background: #1C1C1C 0% 0% no-repeat padding-box;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      @include before-content;
       opacity: 0.63;
-      position: absolute;
+      background: #1C1C1C 0% 0% no-repeat padding-box;
     }
   
     .baltas{
@@ -101,25 +96,57 @@ article.pirmas{
   
       p{
         font-weight: bold;
-        font-size: 0.7em;
+        font-size: 0.8em;
         width: 68%;
+        padding-top: 20px ;
+        
       }
   
-      
-  
       .radio{
-        font-weight: bold;
-        font-size: 0.7em;
-        display: flex;
-        gap: 5px;
-        margin-left: -50px;
-        accent-color: #41D395;
-        border: #41D395;
+        margin-right: 55px;
+        margin-bottom: 20px;
+      }
   
-        &:checked + label {
-          font-weight: 600;
+      input[type="radio"]{
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        border: 2px solid $green;
+        border-radius: 20px;
+        position: relative;
+        top: 3px;
+        margin-left: 7px;
+        
+        
+        
+        &::before{
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 5px;
+          height: 5px;
+          background: $green;
+          border-radius: 100%;
+          margin: auto;
+          transform: scale(0);
+          transition: 0.3s;
+
+        }
+        &:checked::before{
+          transform: scale(1);
         }
         
+        
+      }
+
+      label{
+        font-size: 0.8rem;
+        font-weight: bold;
+        padding-bottom: 10px;
+
       }
   
       hr{
@@ -132,11 +159,13 @@ article.pirmas{
         margin-right: 50px;
       }
   
-      input{
+      input[type="text"], input[type="number"]{
         outline: none;
         border: none;
         opacity: 0.6;
         font-size: 0.7em;
+        margin-top: 15px;
+        
         
         
   

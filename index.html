@@ -14,7 +14,7 @@
   <!-- Navigacijos meniu -->
   <nav>
       <a href="#home"><img src="./app/images/cheshire-county-hygiene-services.svg" alt="logo"></a>
-    <div class="menu">
+    <div class="links">
       <a class="selected" href="#tabs">Features</a>
       <a href="#antras">About</a>
       <a href="#pricing">Pricing</a>
@@ -46,9 +46,9 @@
         <p>Type of subscription</p>
         <div class="radio">
         <input type="radio" value="Monthly" id="Monthly" name="message" checked>
-        <label for="">Monthly</label>
+        <label for="Monthly">Monthly</label>
         <input type="radio" value="Yearly" id="Yearly" name="message">
-        <label for="">Yearly</label>
+        <label for="Yearly">Yearly</label>
         </div>
         <button>GET STARTED</button>
       </form>
@@ -72,24 +72,52 @@
          <!--Sekcija--3--Tabs-->
   <section id="tabs">
     <div class="tabsbutton">
-      <button><span>REGISTER</span></button>
-      <button><span>APPLY</span></button>
-      <button><span>RECIEVE</span></button>
+      <button class="w3-bar-item w3-button tablink active" onclick="openLink(event, 'Left')"><span>REGISTER</span></button>
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Right')"><span>APPLY</span></button>
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Top')"><span>RECIEVE</span></button>
     </div>
-    <div class="tabstext">
+    <div id="Left" class="w3-container city w3-animate-left">
+      <div class="tabutextas">
       <h3>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
     </div>
-    <div class="container">
-      <div class="pirma"><a href=""><img src="./app/images/maza1.png" alt=""></a></div>
-      <div class="antra"><a href=""><img src="./app/images/maza2.png" alt=""></a></div>
-      <div class="trecia"><a href=""><img src="./app/images/didele.png" alt=""></a></div>
+      <div class="container">
+        <span class="pirma"><img src="./app/images/maza1.png" alt=""><img src="./app/images/maza2.png" alt=""></span>
+        <span class="trecia"><img src="./app/images/didele.png" alt=""></span>
+        <div class="overlay">
+          <p>Explore</p>
+        </div>
+      </div>
+    </div>
+    <div id="Right" class="w3-container city w3-animate-right" style="display:none">
+      <div class="tabutextas">
+      <h3>Buttons with subtle hover animation. Detailed characteristics of our ongoing commitment to excellence.</h3>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, ducimus sit laboriosam voluptates et explicabo consequatur consequuntur reiciendis, voluptatem nam nihil, natus at repudiandae neque? Architecto omnis obcaecati non beatae.</p>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet dolor sit amet consectetur, adipisicing elit. Quia, ducimus sit laboriosam voluptates.</p>
+    </div>
+      <div class="container">
+        <span class="pirma"><img src="./app/images/maza2.png" alt=""><img src="./app/images/maza1.png" alt=""></span>
+        <span class="trecia"><img src="./app/images/didele.png" alt=""></span>
+      </div>
+    </div>
+    <div id="Top" class="w3-container city w3-animate-top" style="display:none">
+      <div class="tabutextas">
+      <h3>Icons with gentle fade-in animation. Elaborated features of our everlasting dedication to customer satisfaction.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet pulvinar tempor. Cum sociis natoque.</p>
+    </div>
+      <div class="container">
+        <span class="trecia"><img src="./app/images/didele.png" alt=""></span>
+        <span class="pirma"><img src="./app/images/maza1.png" alt=""><img src="./app/images/maza2.png" alt=""></span>
+      </div>
+    </div>
+    
   </section>
 
   <!-- 4 Sekcija---About1 -->
 
-  <article id="antras" class="antras">
+  <section id="antras" class="antras">
     <div>
       <img class="logo" src="./app/images/cheshire-county-hygiene-services-2.svg" alt="logo">
     </div>
@@ -117,9 +145,9 @@
       </div>
     </div>
     </div>
-  </article>
+  </section>
        <!-- 5 Sekcija---About2 -->
-  <article id="about"">
+  <section id="about"">
     <h2>WHY THIS IS AWSOME</h2>
     <hr>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -140,11 +168,11 @@
       <p>Proin gravida dolor sit amet lacus accumsan et viverra.</p>
     </div>
   </div>
-  </article>
+</section>
 
   <!---6-Sekcija-----Pricing -->
 
-  <article id="pricing">
+  <section id="pricing">
     <div class="pricing-headeris">
       <h2>PRICING OPTIONS</h2>
       <div class="greendiv"></div>
@@ -203,7 +231,7 @@
           </ul>
         </div>
       </div>
-  </article>
+  </section>
 
 <!---7-Sekcija-----Reviews -->
   <section id="reviews">
@@ -226,6 +254,9 @@
               </div>
             </div>
           </div>
+
+        </div>
+        <div class="swiper-slide">
           <div class="review-box">
             <div class="text-box">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.</p>
@@ -238,9 +269,12 @@
               </div>
             </div>
           </div>
+
+        </div>
+        <div class="swiper-slide">
           <div class="review-box">
             <div class="text-box">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex..</p>
             </div>
             <div class="img-box">
               <img src="./app/images/avatar_2_u231.png" alt="">
@@ -250,6 +284,7 @@
               </div>
             </div>
           </div>
+
         </div>
         <div class="swiper-slide">
           <div class="review-box">
@@ -264,30 +299,7 @@
               </div>
             </div>
           </div>
-          <div class="review-box">
-            <div class="text-box">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.</p>
-            </div>
-            <div class="img-box">
-              <img src="./app/images/avatar_2_u231.png" alt="">
-              <div class="about-box">
-              <h4>John S.</h4>
-              <p>Freelancer</p>
-              </div>
-            </div>
-          </div>
-          <div class="review-box">
-            <div class="text-box">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
-            </div>
-            <div class="img-box">
-              <img src="./app/images/avatar_2_u231.png" alt="">
-              <div class="about-box">
-              <h4>Susan W.</h4>
-              <p>Photographer</p>
-              </div>
-            </div>
-          </div>
+
         </div>
         <div class="swiper-slide">
           <div class="review-box">
@@ -302,30 +314,7 @@
               </div>
             </div>
           </div>
-          <div class="review-box">
-            <div class="text-box">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.</p>
-            </div>
-            <div class="img-box">
-              <img src="./app/images/avatar_2_u231.png" alt="">
-              <div class="about-box">
-              <h4>John S.</h4>
-              <p>Freelancer</p>
-              </div>
-            </div>
-          </div>
-          <div class="review-box">
-            <div class="text-box">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
-            </div>
-            <div class="img-box">
-              <img src="./app/images/avatar_2_u231.png" alt="">
-              <div class="about-box">
-              <h4>Susan W.</h4>
-              <p>Photographer</p>
-              </div>
-            </div>
-          </div>
+
         </div>
         <div class="swiper-slide">
           <div class="review-box">
@@ -340,18 +329,9 @@
               </div>
             </div>
           </div>
-          <div class="review-box">
-            <div class="text-box">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.</p>
-            </div>
-            <div class="img-box">
-              <img src="./app/images/avatar_2_u231.png" alt="">
-              <div class="about-box">
-              <h4>John S.</h4>
-              <p>Freelancer</p>
-              </div>
-            </div>
-          </div>
+
+        </div>
+        <div class="swiper-slide">
           <div class="review-box">
             <div class="text-box">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
@@ -359,8 +339,69 @@
             <div class="img-box">
               <img src="./app/images/avatar_2_u231.png" alt="">
               <div class="about-box">
-              <h4>Susan W.</h4>
-              <p>Photographer</p>
+              <h4>Jeremy H.</h4>
+              <p>Manager</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-slide">
+          <div class="review-box">
+            <div class="text-box">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+            </div>
+            <div class="img-box">
+              <img src="./app/images/avatar_2_u231.png" alt="">
+              <div class="about-box">
+              <h4>Jeremy H.</h4>
+              <p>Manager</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-slide">
+          <div class="review-box">
+            <div class="text-box">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+            </div>
+            <div class="img-box">
+              <img src="./app/images/avatar_2_u231.png" alt="">
+              <div class="about-box">
+              <h4>Jeremy H.</h4>
+              <p>Manager</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="swiper-slide">
+          <div class="review-box">
+            <div class="text-box">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+            </div>
+            <div class="img-box">
+              <img src="./app/images/avatar_2_u231.png" alt="">
+              <div class="about-box">
+              <h4>Jeremy H.</h4>
+              <p>Manager</p>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+        <div class="swiper-slide">
+          <div class="review-box">
+            <div class="text-box">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+            </div>
+            <div class="img-box">
+              <img src="./app/images/avatar_2_u231.png" alt="">
+              <div class="about-box">
+              <h4>Jeremy H.</h4>
+              <p>Manager</p>
               </div>
             </div>
           </div>

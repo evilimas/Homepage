@@ -68,13 +68,52 @@
         
         
     
-        .radio-btn{
-          display: flex;
-          font-size: 0.6em;
-          font-weight: bold;
-          gap: 10px;
-          
-        }
+        .radio-btn {
+            display: flex;
+            gap: 80px;
+            margin-top: 30px;
+            margin-right: 70px;
+      
+            .contact-radio-btn {
+              display: flex;
+              width: 15px;
+              height: 15px;
+              border: 1px solid $green;
+              border-radius: 100%;
+              position: relative;
+              transition: background 0.5s;
+              label {
+                display: flex;
+                color: rgba($color: $black, $alpha: 0.5);
+      
+                font-size: 10px;
+                font-weight: 600;
+                margin-left: 5px;
+                transition: color 0.5s;
+      
+                input::before {
+                  content: "";
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  bottom: 0;
+                  right: 0;
+                  transform: scale(0);
+                  background: $green;
+                  border-radius: 100%;
+                  transition: 0.5s;
+                }
+                input:checked:before {
+                  transform: scale(0.6);
+                }
+                input:checked ~ .mark {
+                  color: $black;
+                  opacity: 1;
+                  font-weight: 700;
+                }
+              }
+            }
+          }
     }
   
     

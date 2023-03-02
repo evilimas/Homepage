@@ -17,7 +17,7 @@ nav{
       
     }
     
-    div.menu{
+    div.links{
       display: flex;
       gap: 40px;
       
@@ -35,7 +35,7 @@ nav{
       }
     }
   
-    .menu a{
+    .links a{
       
       flex-direction: row;
       text-decoration: none;
@@ -44,8 +44,10 @@ nav{
       color: rgb(255, 255, 255);
       opacity: 0.6;
       transition: 0.3s;
-      transition-delay: 0.1s;
+      transition-delay: 0.2s;
       position: relative;
+
+      
   
       &:hover{
         opacity: 1;
@@ -80,6 +82,8 @@ nav{
         height: 15%;
       }
     }
+
+    
   }
 
   @media (max-width: 768px){
@@ -97,7 +101,7 @@ nav{
     }
 
 
-    .menu{
+    .links{
       position: absolute;
       top: 50px;
       left: 0;
@@ -108,10 +112,10 @@ nav{
       align-items: center;
       transform: translateY(-120%);
       opacity: 0;
-      transition: 0,3s;
+      transition: 0.3s;
       
     }
-    .menu.open{
+    .links.open{
       transform: translateY(0);
       opacity: 1;
     }
