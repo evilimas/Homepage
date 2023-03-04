@@ -46,3 +46,29 @@
     }
    
   }
+@media (max-width: 768px){
+  .social{
+    flex-direction: column;
+    height: 230px;
+    .textas{
+      width: 100%;
+      margin-top: 50px;
+      margin-bottom: 20px;
+
+      h4{
+        font-size: 1.4em;
+
+      }
+      p{
+        font-size: 1em;
+      }
+    }
+    .icons{
+      display: flex;
+      width: 100%;
+      justify-content: space-around ;
+      
+    }
+    
+  }
+}

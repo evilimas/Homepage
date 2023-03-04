@@ -32,10 +32,9 @@
   .swiper-wrapper{
     display: flex;
     align-items: center;
-  }
-  
-  .swiper-slide {
     
+  }
+  .swiper-slide {
     font-size: 18px;
     background: #fff;
     display: flex;
@@ -45,7 +44,7 @@
   }
   
   .review-box{
-    width: 90%;
+    width: 70%;
   }
   
   .text-box{
@@ -76,7 +75,7 @@
     bottom: 60px;
     margin: auto;
     border: 12px solid;
-    border-color: $blue transparent transparent
+    border-color: $blue transparent transparent;
     }
   
     img{

@@ -75,4 +75,35 @@
       
     }
   }
+
+  @media(max-width: 768px){
+    #about{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+        align-items: center;
+        h2{
+          margin-top: -30px;
+        }
+        p{
+          width: 80%;
+        }
+        .greendiv{
+          width: 70%;
+        }
+      
+
+      .display{
+        flex-direction: column;
+        
+        gap: 20px;
+        
+        h3{
+          margin-top: 15px;
+          margin-bottom: 5px;
+        }
+
+      }
+    }
+  }
   

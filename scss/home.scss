@@ -29,7 +29,7 @@ article.pirmas{
       
   
       img:first-child{
-        min-width: 200px;
+        min-width: 250px;
         max-width: 40%;
       }
   
@@ -37,7 +37,7 @@ article.pirmas{
   
       
       h2{
-        width: 43%;
+        width: 53%;
         color: white;
         font-size: 1.6em;
         font-weight: 600;
@@ -77,13 +77,13 @@ article.pirmas{
       justify-content: center;
       background: #ffffff;
       gap: 15px;
-      margin-right: 80px;
+      margin-right: 90px;
       margin-top: 70px;
       margin-bottom: 20px;
       position: relative;
       z-index: 1;
       border-radius: 30px;
-      min-width: 280px;
+      min-width: 340px;
       max-width: 300px;
 
       span{
@@ -103,7 +103,7 @@ article.pirmas{
       }
   
       .radio{
-        margin-right: 55px;
+        margin-right: 85px;
         margin-bottom: 20px;
       }
   
@@ -156,7 +156,7 @@ article.pirmas{
       }
       
       .box-textas{
-        margin-right: 50px;
+        margin-right: 80px;
       }
   
       input[type="text"], input[type="number"]{
@@ -188,6 +188,8 @@ article.pirmas{
   
       button{
         padding: 16px;
+        font-size: 1.1em;
+        font-weight: 500;
         background: #41D395;
         color: white;
         border: none;
@@ -198,7 +200,7 @@ article.pirmas{
         transition: 0.4s;
         &:hover{
           background: #289165;
-          font-size: 1em;
+          font-size: 1.2em;
 
         }
   
@@ -207,4 +209,43 @@ article.pirmas{
       
     }
   
+  }
+  @media (max-width: 768px){
+    article.pirmas {
+      margin: -50px;
+      
+      flex-direction: column;
+  
+      .pirmaskaire {
+        margin-bottom: -40px;
+        img {
+          align-items: center;
+          text-align: center;
+          margin-left: 50px;
+   
+        }
+        
+        text-align: center;
+        h2 {
+          width: 100%;
+        }
+        p {
+          text-align: justify;
+          width: 90%;
+        }
+        hr {
+          width: 90%;
+          
+        }
+        button {
+          width: 88%;
+          margin: 20px 0;
+        }
+      }
+      .top {
+        margin: auto;
+
+        
+      }
+    }
   }

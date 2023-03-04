@@ -73,3 +73,33 @@
     }
     
   }
+  @media(max-width: 768px){
+    .antras{
+      flex-direction: column;
+      padding: 0;
+      .logo{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+      }
+
+      .desne2{
+        margin: 0;
+        margin-left: 10px;
+        h2{
+          width: 100%;
+
+        }
+        hr{
+          width: 95%;
+        }
+        p{
+          width: 80%;
+          margin-left: 20px;
+        }
+        h5, span{
+          margin-left: 20px;
+        }
+      }
+    }
+  }
