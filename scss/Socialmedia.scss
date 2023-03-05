@@ -49,24 +49,32 @@
 @media (max-width: 768px){
   .social{
     flex-direction: column;
-    height: 230px;
+    padding: 0;
+    height: 240px;
     .textas{
       width: 100%;
       margin-top: 50px;
       margin-bottom: 20px;
 
       h4{
+        
         font-size: 1.4em;
+        text-align: center;
+        margin-left: -50px;
+        padding: 10px;
 
       }
       p{
         font-size: 1em;
+        text-align: center;
+        width: 80%;
       }
     }
     .icons{
       display: flex;
       width: 100%;
       justify-content: space-around ;
+      padding-top: 20px;
       
     }
     

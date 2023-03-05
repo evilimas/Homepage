@@ -13,3 +13,20 @@
     background: #289165;
     font-size: 1em;
 }
+
+@mixin flex-col-jc-ce{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin bg-img-prop{
+    display: flex;
+    background-size: cover;
+    position: relative;
+}

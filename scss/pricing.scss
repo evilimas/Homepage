@@ -3,29 +3,60 @@
     width: 100%;
     height: auto;
     max-width: 100%;
-    padding: 0 150px;
+    padding: 0 100px;
+
+    .swiper{
+      width: 100%;
+      height: 100%;
+      height: 650px !important;
+      
+      
+    }
+    .swiper-slide{
+      gap: 50px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+     background: $blue;
+     display: flex;
+      align-items: center;
+      justify-content: center;
+  
+    }
+    .swiper-wrapper{
+      display: flex;
+      align-items: center;
+      
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+    display: none;
+  }
+
      
-      .pricing-headeris {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding-top: 100px;
-        h2 {
-          color: $white;
-          font-size: 30px;
-          font-weight: 500;
-        }
-        .greendiv {
-          width: 65px;
-          border: 1px solid $green;
-          margin: 25px 0;
-        }
-        p{
-          color: $white;
-          font-size: 0.8rem;
-        }
-    
+    .pricing-headeris {
+     display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 100px;
+            h2 {
+              color: $white;
+              font-size: 30px;
+              font-weight: 500;
+            }
+            .greendiv {
+              width: 65px;
+              border: 1px solid $green;
+              margin: 25px 0;
+            }
+            p{
+              color: $white;
+              font-size: 0.8rem;
+            }
+        
     }
     .kaina{
       display: flex;
@@ -41,7 +72,7 @@
       transition: 0.3s;
       gap: 10px;
       &:hover{
-        transform: scale(1.2);
+        transform: scale(1.1);
       }
   
       
@@ -93,9 +124,33 @@
       }
     }
   }
+
+  @media(max-width:768px){
+    #pricing{
+      padding: 0;
+      .plan{
+        padding-bottom: 20px;
+      }
+      .pricing-headeris{
+        p{
+          margin-bottom: 30px;
+          
+        }
+        .greendiv{
+          width: 70%;
+        }
+      }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next{
+      display: block !important;
+      color: $green;
+  }
   
   
   
   
   
   
+  }

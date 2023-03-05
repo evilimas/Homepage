@@ -1,9 +1,8 @@
 article.pirmas{
-    display: flex;
+  
     background: url(../images/city.png);
-    background-size: cover;
+    @include bg-img-prop;
     background-position: center;
-    position: relative;
     padding-bottom: 50px;
     height: 100%;
     
@@ -29,8 +28,8 @@ article.pirmas{
       
   
       img:first-child{
-        min-width: 250px;
-        max-width: 40%;
+        width: 250px;
+        
       }
   
    
@@ -57,7 +56,7 @@ article.pirmas{
         border-color: white;
         transition: 0.5s;
         &:hover{
-          transform: scale(1.2);
+          transform: scale(1.1);
           color: $orange;
           border-color: $orange;
 
@@ -85,6 +84,7 @@ article.pirmas{
       border-radius: 30px;
       min-width: 340px;
       max-width: 300px;
+      
 
       span{
         color: $orange;
@@ -215,13 +215,16 @@ article.pirmas{
       margin: -50px;
       
       flex-direction: column;
+
+      
   
       .pirmaskaire {
         margin-bottom: -40px;
         img {
-          align-items: center;
-          text-align: center;
-          margin-left: 50px;
+          width: 85% !important;
+          
+          margin-left: 15px;
+          
    
         }
         
@@ -242,10 +245,13 @@ article.pirmas{
           margin: 20px 0;
         }
       }
-      .top {
-        margin: auto;
 
-        
+      .virsus-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 80px;
       }
+     
     }
   }
