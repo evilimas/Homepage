@@ -76,3 +76,44 @@ const burger = document.getElementById("burger");
       }
     }
   });
+// Formu validacija
+
+// Paimame formos elementą
+const form = document.querySelector('form.top');
+
+// Pridedame "submit" įvykio klausymą
+form.addEventListener('submit', (event) => {
+  // Pridedame "preventDefault" metodą, kad sustabdytume numatytąjį formos elgesį
+  event.preventDefault();
+
+  // Paimame visus įvesties laukus ir radio mygtukus
+  const firstName = form.querySelector('input[name="firstName"]');
+  const lastName = form.querySelector('input[name="lastName"]');
+  const phoneNumber = form.querySelector('input[name="phoneNumber"]');
+  const subscription = form.querySelector('input[name="message"]:checked');
+
+  // Tikriname ar visi laukai yra užpildyti
+  if (firstName.value === '') {
+    alert('Prašome įvesti savo vardą');
+    return;
+  }
+
+  if (lastName.value === '') {
+    alert('Prašome įvesti savo pavardę');
+    return;
+  }
+
+  if (phoneNumber.value === '') {
+    alert('Prašome įvesti savo telefono numerį');
+    return;
+  }
+
+  // Tikriname ar prenumeratos rūšis yra pasirinkta
+  if (!subscription) {
+    alert('Prašome pasirinkti prenumeratos rūšį');
+    return;
+  }
+
+  // Jei visi laukai yra užpildyti, siunčiame formą
+  form.submit();
+});
