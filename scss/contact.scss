@@ -94,8 +94,7 @@
               transition: background 0.5s;
               label {
                 display: flex;
-                color: rgba($color: $black, $alpha: 0.5);
-      
+                color: $grey;
                 font-size: 10px;
                 font-weight: 600;
                 margin-left: 5px;
@@ -129,4 +128,21 @@
   
     
   }
+  }
+  @media(max-width: 768px){
+    #contact{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        p{
+            font-size: 0.9em;
+            
+        }
+        .input-box2{
+            min-width: 300px !important;
+
+            
+        }
+
+    }
   }

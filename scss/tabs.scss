@@ -159,6 +159,7 @@
     .city{
       flex-direction: column;
       width: 100%;
+      margin-left: -20px;
       h3{
         font-size: 1.2em;
         width: 90%;
@@ -176,10 +177,22 @@
       margin-bottom: -40px;
       .small-image-wrapper{
         width: 69%;
+        width: 182px ;
+        height: 190px;
+        
       }
       .big-image-wrapper{
         width: 381px;
         height: 200px;
+        
+      }
+      .overlay{
+        p{
+          text-align: center ;
+          align-items: center ;
+          justify-content: center ;
+
+        }
         
       }
     }
