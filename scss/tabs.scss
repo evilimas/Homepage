@@ -71,6 +71,7 @@
     position: relative;
     display: inline-block;
     
+    
 
     .image-wrapper {
       position: relative;
@@ -81,14 +82,12 @@
         width: 90%;
         height: auto;
         
-        
-        
-        
       }
     }
 
     .small-image-wrapper {
       position: relative;
+      
     }
 
     .big-image-wrapper {
@@ -98,6 +97,7 @@
     .pirma {
       display: flex;
       gap: 8px;
+      
     }
   }
 
@@ -112,9 +112,7 @@
     height: 89%;
     visibility: hidden;
     background-color: #e27866c4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     transition: visibility 0s, opacity 0.5s linear;
     cursor: url('/app/images/description-cursor-icon-with-shadow-32.png'), auto;
   }
@@ -188,9 +186,7 @@
       }
       .overlay{
         p{
-          text-align: center ;
-          align-items: center ;
-          justify-content: center ;
+          margin-bottom: 45px;
 
         }
         
@@ -216,6 +212,15 @@
         
         
       }
+    }
+  }
+}
+@media (max-width: 380px){
+  #tabs{
+    .container{
+      margin-left: -5px;
+      
+      
     }
   }
 }

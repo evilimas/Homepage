@@ -5,7 +5,8 @@ article.pirmas{
     background-position: center;
     padding-bottom: 50px;
     height: 100%;
-    overflow: hidden;
+    width: auto;
+    
     
     &::before{
       @include before-content;
@@ -19,8 +20,7 @@ article.pirmas{
     }
   
     .pirmaskaire{
-      display: flex;
-      flex-direction: column;
+      @include flex-col;
       width: 70%;
       gap: 40px;
       z-index: 1;
@@ -71,10 +71,7 @@ article.pirmas{
   
   
     form.top{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      @include flex-col-center;
       background: #ffffff;
       gap: 15px;
       margin-right: 90px;
@@ -188,9 +185,7 @@ article.pirmas{
         background: #F5F5F5;
         padding: 15px;
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         border-top-right-radius: 5px;
         border-top-left-radius: 5px;
         font-weight: 700;
@@ -225,6 +220,7 @@ article.pirmas{
   @media (max-width: 768px){
     article.pirmas {
       margin: -50px;
+      width: 114% !important;
       
       flex-direction: column;
 
@@ -235,7 +231,7 @@ article.pirmas{
         img {
           width: 85% !important;
           
-          margin-left: 15px;
+          margin-left: 25px;
           
    
         }
@@ -262,8 +258,26 @@ article.pirmas{
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-left: 80px;
+        margin-left: 110px;
+        
+        
       }
      
     }
+
+    form.top{
+      min-width: 290px !important;
+      hr{
+        margin-left: -20px;
+      }
+
+    }
+  }
+ 
+  @media (max-width: 360px){
+    form.top{
+      margin-right: 60px;
+      min-width: 260px !important;
+    }
+
   }

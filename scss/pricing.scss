@@ -49,25 +49,22 @@
 
      
     .pricing-headeris {
-     display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            padding-top: 100px;
-            h2 {
-              color: $white;
-              font-size: 30px;
-              font-weight: 500;
-            }
-            .greendiv {
-              width: 65px;
-              border: 1px solid $green;
-              margin: 25px 0;
-            }
-            p{
-              color: $white;
-              font-size: 0.8rem;
-            }
+      @include flex-col-center;
+      padding-top: 100px;
+      h2 {
+        color: $white;
+        font-size: 30px;
+        font-weight: 500;
+        }
+        .greendiv {
+        width: 65px;
+        border: 1px solid $green;
+        margin: 25px 0;
+        }
+        p{
+        color: $white;
+        font-size: 0.8rem;
+        }
         
     }
     .kaina{
@@ -142,6 +139,7 @@
       padding: 0;
       .plan{
         padding-bottom: 20px;
+        
       }
       .pricing-headeris{
         p{

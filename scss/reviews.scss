@@ -60,6 +60,7 @@
     background-color: $blue;
     border-radius: 10px;
     padding: 13px;
+    box-shadow: $b-sh;
     
     max-width: 250px;
     text-align: start;
@@ -127,6 +128,10 @@
 @media(max-width: 768px){
     #reviews{
         padding: 0;
+
+        .swiper-slide{
+            margin-left: 5px;
+        }
         .greendiv{
             width: 70% !important;
         }
