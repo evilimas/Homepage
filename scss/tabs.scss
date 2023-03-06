@@ -27,7 +27,7 @@
       margin-left: 80px;
       transition: 0.5s;
       box-shadow: $b-sh;
-      cursor: url('/app/images/description-cursor-icon-with-shadow-32.png'), auto;
+      cursor: url('../images/description-cursor-icon-with-shadow-32.png'), auto;
 
       span {
         display: inline-block;
@@ -114,7 +114,7 @@
     background-color: #e27866c4;
     @include flex-center;
     transition: visibility 0s, opacity 0.5s linear;
-    cursor: url('/app/images/description-cursor-icon-with-shadow-32.png'), auto;
+    cursor: url('../images/description-cursor-icon-with-shadow-32.png'), auto;
   }
 
   .overlay p {
